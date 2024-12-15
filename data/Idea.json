@@ -1,9 +1,8 @@
 {
     "log_user": -1,
-    "Game_version": "1.3.0",
+    "Game_version": "1.0.0",
     "Game_title": [
-        "你施朗了",
-        "施朗猎人"
+        "怪物猎人"
     ],
     "Default_setting": {
         "width": 1280,
@@ -13,21 +12,6 @@
         "balance_height": 720
     },
     "Text": [
-        [
-            "断开大脑连接以获得最佳游戏体验",
-            "今天是个好日子",
-            "重开",
-            "记完了，nice！",
-            "记完了",
-            "还没记",
-            "什么？",
-            "NICE",
-            "积木",
-            "难度爆表",
-            "玩具",
-            "难度爆表",
-            "我炸了"
-        ],
         [
             "连接鼠标以获得最佳游戏体验",
             "欢迎回来!",
@@ -41,64 +25,11 @@
             "关卡",
             "护符",
             "作战",
-            "闪击"
+            "闪击",
+            "基于Shilang-Hunter开发"
         ]
     ],
     "Images": [
-        [
-            "assets/images/Shilang_button.png",
-            "assets/images/Shilang_button_active.png",
-            "assets/images/Shilang_button_active.png",
-            "assets/images/Shilang_input_box.png",
-            "assets/images/Shilang_input_box_active.png",
-            "assets/images/Shilang_icon.png",
-            "assets/images/background_Uh.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/background_load_lang.png",
-            "assets/images/background_load_lang.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/background_load_strip_lang.png",
-            "background_Uh.png",
-            "background_Uh.png",
-            "background_Uh.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/background_load_strip_lang.png",
-            "background_Uh.png",
-            "background_Uh.png",
-            "assets/images/background_Uh.png",
-            "assets/images/background_load_lang.png",
-            "assets/images/background_load_strip_lang.png",
-            "assets/images/Shilang_icon.png",
-            "assets/images/Shilang_icon.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Level.png",
-            "assets/images/Shilang_button.png",
-            "assets/images/Shilang_button_active.png",
-            "assets/images/Shilang_button_active.png",
-            "assets/images/Shilang_button.png",
-            "assets/images/Shilang_button_active.png",
-            "assets/images/Shilang_button_active.png",
-            "assets/images/background_load_strip_lang.png",
-            "assets/images/Level.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/background_load_lang.png",
-            "assets/images/background_load_strip_lang.png",
-            "assets/images/background_load_lang.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Level.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png",
-            "assets/images/Shilang_switch_active.png"
-        ],
         [
             "assets/images/button.png",
             "assets/images/button_hover.png",
@@ -162,32 +93,9 @@
             2000,
             2000,
             2000
-        ],
-        [
-            3000,
-            1000,
-            2000,
-            2000,
-            2000,
-            2000
         ]
     ],
     "Sound": [
-        [
-            "assets/sounds/Shilang_haha2.wav",
-            "assets/sounds/Shilang_haha.wav",
-            "assets/sounds/Shilang_Uh.wav",
-            "assets/sounds/Shilang_alert.wav",
-            "assets/sounds/Shilang_Boom_Uh.wav",
-            "assets/sounds/Shilang_Uh.wav",
-            "assets/sounds/Shilang_Uh.wav",
-            "assets/sounds/Shilang_haha.wav",
-            "assets/sounds/Shilang_Uh.wav",
-            "assets/sounds/Shilang_Uh.wav",
-            "assets/sounds/Shilang_Uh.wav",
-            "assets/sounds/Shilang_haha.wav",
-            "assets/sounds/Shilang_Uh.wav"
-        ],
         [
             "assets/sounds/Link_up2.wav",
             "assets/sounds/Link_up1.mp3",

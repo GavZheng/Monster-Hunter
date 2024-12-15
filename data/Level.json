@@ -17,7 +17,7 @@
     "1": {
       "Level_id": 1,
       "Title": "1-2 入侵",
-      "Description": "一批施朗发起了进攻。",
+      "Description": "一批怪物发起了进攻。",
       "Lock_Description": "完成1-1",
       "Position": [
         512,
@@ -31,7 +31,7 @@
     "2": {
       "Level_id": 2,
       "Title": "1-3 攻守",
-      "Description": "一些高速施朗和绿色施朗加入了战斗。",
+      "Description": "一些高速怪物和绿色怪物加入了战斗。",
       "Lock_Description": "完成1-2",
       "Position": [
         768,
@@ -45,7 +45,7 @@
     "3": {
       "Level_id": 3,
       "Title": "1-4 破甲",
-      "Description": "一群重甲施朗发起了进攻。",
+      "Description": "一群重甲怪物发起了进攻。",
       "Lock_Description": "完成1-3",
       "Position": [
         1024,
@@ -59,7 +59,7 @@
     "4": {
       "Level_id": 4,
       "Title": "S1-1 据守",
-      "Description": "你闯入了一群施朗的基地。",
+      "Description": "你闯入了一群怪物的基地。",
       "Lock_Description": "？？？",
       "Position": [
         640,
@@ -73,7 +73,7 @@
     "5": {
       "Level_id": 5,
       "Title": "1-5 防守",
-      "Description": "庇护施朗和多种施朗组成了防线。",
+      "Description": "庇护怪物和多种怪物组成了防线。",
       "Lock_Description": "完成1-4",
       "Position": [
         320,
@@ -87,7 +87,7 @@
     "6": {
       "Level_id": 6,
       "Title": "1-6 进攻",
-      "Description": "嗜血施朗带领多种施朗发起了进攻。",
+      "Description": "嗜血怪物带领多种怪物发起了进攻。",
       "Lock_Description": "完成1-5",
       "Position": [
         960,

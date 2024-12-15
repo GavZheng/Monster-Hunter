@@ -1,19 +1,4 @@
 # coding=utf-8
-"""
-Shilang Hunter
-A GUI program.
-- Functionality: Shoot and defeat Shilang.
-- Developers: Cheple_Bob.
-- Special Thanks: Gavin - Give some advice to improve Shilang_Hunter.
-- Dependencies: pygame >= 2.5.2.
-- Usage Instructions: How to run or use the program.
-    Example Usage:
-    python3 main.py
-- Note: Please ensure that the Python interpreter is installed before running this program.
-Also, Please ensure that requirements.txt packs is already installed before running this program.
-- Warning: Don't open this program on April 1st and May 13th!(Just For Fun!)
-(Except for these two days, no code will torture the user.)
-"""
 import json
 from datetime import datetime
 from decimal import Decimal
@@ -32,18 +17,15 @@ clock: any = pygame.time.Clock()
 tick_frequency: int = 60
 date: str = datetime.now().strftime("%m-%d")
 # date: str = "04-01"
-with open("data/Idea.json") as b:
+with open("data/Idea.json","r" , encoding="UTF-8") as b:
     json_str11: any = json.load(b)
-if date == "04-01" or date == "05-13":  # 常用的一些图片
-    load_number: int = 0
-else:
-    load_number: int = 1
+magic_number: int = 0
 game_version: str = json_str11["Game_version"]
-image_usually_use: list = json_str11["Images"][load_number]
-waiting_time: list = json_str11["Waiting_time"][load_number]
-sound: list = json_str11["Sound"][load_number]
-game_text: list = json_str11["Text"][load_number]
-game_title: str = json_str11["Game_title"][load_number]
+image_usually_use: list = json_str11["Images"][magic_number]
+waiting_time: list = json_str11["Waiting_time"][magic_number]
+sound: list = json_str11["Sound"][magic_number]
+game_text: list = json_str11["Text"][magic_number]
+game_title: str = json_str11["Game_title"][magic_number]
 game_icon: any = pygame.image.load(image_usually_use[22])  # 游戏标题和图标初始化
 if (json_str11["Default_setting"]["width"] == 1280 and json_str11["Default_setting"]["height"] == 720 and
         json_str11["Default_setting"]["balance_width"] == 1280 and
@@ -1994,6 +1976,9 @@ class Pages:
         text1: any = CustomText(game_text[0], "assets/fonts/Text.TTF", 40,
                                 (255, 255, 255), [0, 0], 0, 0,
                                 (3, 4), (10, 16), True, False, None)
+        text2: any = CustomText(game_text[13], "assets/fonts/Text.TTF", 40,
+                                (255, 255, 255), [0, 0], 0, 0,
+                                (8, 16), (14, 16), True, True, None)
         while running:
             if not self.link_up.can_exit:
                 self.sleep(300)
@@ -2001,6 +1986,7 @@ class Pages:
             logo.draw()
             mouse_img.draw()
             text1.draw()
+            text2.draw()
             if pygame.time.get_ticks() - self.now_time >= waiting_time[0]:
                 with open("data/Idea.json", encoding="UTF-8") as c:
                     json_str1: any = json.load(c)
@@ -2038,6 +2024,7 @@ class Pages:
                 mouse_img.alpha += 10
                 logo.alpha += 10
                 text1.alpha += 10
+                text2.alpha += 10
             # 事件处理
             for events in pygame.event.get():
                 if events.type == pygame.QUIT:  # 检测到窗口关闭事件
@@ -2081,7 +2068,7 @@ class Pages:
         button4: any = Button("账户", 50, 470, 400, 100,
                               image_usually_use[0], image_usually_use[1],
                               image_usually_use[2], 1, 0, (1, 4), (6, 8))
-        text1: any = CustomText(f"{datetime.now().strftime("%Y")} Code&Release", "assets/fonts/Text.TTF", 40,
+        text1: any = CustomText(f"© {datetime.now().strftime("%Y")} Code&Release", "assets/fonts/Text.TTF", 40,
                                 (255, 255, 255), [0, height // 40 * 39], 255, 0,
                                 (0, 20), (39, 40), False, False, None)
         text2: any = CustomText(f"{game_version}", "assets/fonts/Text.TTF", 40,
